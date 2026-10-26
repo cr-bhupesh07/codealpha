@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A modern basic calculator built with HTML, CSS and vanilla JavaScript.">
+  <title>Basic Calculator | CodeAlpha Task 2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1 class="page-title">Basic Calculator</h1>
+    </header>
+
+    <section class="calculator" aria-label="Calculator">
+      <!-- Display -->
+      <div class="display">
+        <div class="display-history" id="history" aria-hidden="true"></div>
+        <output class="display-current" id="current" aria-live="polite">0</output>
+      </div>
+
+      <!-- Keypad -->
+      <div class="keypad" id="keypad" role="group" aria-label="Calculator keys">
+        <button type="button" class="key key-clear" data-action="clear" data-key="Escape" aria-label="Clear all">C</button>
+        <button type="button" class="key key-function" data-action="backspace" data-key="Backspace" aria-label="Backspace">&#9003;</button>
+        <button type="button" class="key key-operator" data-action="operator" data-value="/" data-key="/" aria-label="Divide">&divide;</button>
+        <button type="button" class="key key-operator" data-action="operator" data-value="*" data-key="*" aria-label="Multiply">&times;</button>
+
+        <button type="button" class="key" data-action="digit" data-value="7" data-key="7">7</button>
+        <button type="button" class="key" data-action="digit" data-value="8" data-key="8">8</button>
+        <button type="button" class="key" data-action="digit" data-value="9" data-key="9">9</button>
+        <button type="button" class="key key-operator" data-action="operator" data-value="-" data-key="-" aria-label="Subtract">&minus;</button>
+
+        <button type="button" class="key" data-action="digit" data-value="4" data-key="4">4</button>
+        <button type="button" class="key" data-action="digit" data-value="5" data-key="5">5</button>
+        <button type="button" class="key" data-action="digit" data-value="6" data-key="6">6</button>
+        <button type="button" class="key key-operator" data-action="operator" data-value="+" data-key="+" aria-label="Add">+</button>
+
+        <button type="button" class="key" data-action="digit" data-value="1" data-key="1">1</button>
+        <button type="button" class="key" data-action="digit" data-value="2" data-key="2">2</button>
+        <button type="button" class="key" data-action="digit" data-value="3" data-key="3">3</button>
+        <button type="button" class="key key-equals" data-action="equals" data-key="Enter" aria-label="Equals">=</button>
+
+        <button type="button" class="key key-zero" data-action="digit" data-value="0" data-key="0">0</button>
+        <button type="button" class="key" data-action="decimal" data-key="." aria-label="Decimal point">.</button>
+      </div>
+    </section>
+
+    <p class="hint">
+      Keyboard: <kbd>0-9</kbd> <kbd>.</kbd> <kbd>+</kbd> <kbd>-</kbd> <kbd>*</kbd> <kbd>/</kbd>
+      &nbsp;|&nbsp; <kbd>Enter</kbd> equals &nbsp;|&nbsp; <kbd>Backspace</kbd> delete &nbsp;|&nbsp; <kbd>Esc</kbd> clear
+    </p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhupesh Kumar | Full Stack Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Bhupesh Kumar, a B.Tech Artificial Intelligence and Data Science student at Delhi Technical Campus aiming to become a Full Stack Developer.">
+  <meta name="theme-color" content="#070a13">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%238b7cff'/%3E%3Ctext x='32' y='42' font-size='28' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'%3EBK%3C/text%3E%3C/svg%3E">
+  <!-- Lets CSS know JavaScript is available (animations are only hidden when JS works) -->
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===================== HEADER / NAVIGATION ===================== -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand" aria-label="Bhupesh Kumar, back to top">
+        <span class="brand-mark" aria-hidden="true">BK</span>
+        <span class="brand-name">Bhupesh Kumar</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" type="button"
+              aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav aria-label="Primary navigation">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#resume">Resume</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="pill reveal">B.Tech &middot; AI &amp; Data Science &middot; Class of 2029</p>
+          <h1 id="hero-title" class="reveal">Hi, I&rsquo;m <span class="gradient-text">Bhupesh Kumar</span></h1>
+          <p class="hero-role reveal">Full Stack Developer</p>
+          <p class="hero-text reveal">
+            I&rsquo;m a B.Tech student at Delhi Technical Campus. I build projects with C, C++, Python,
+            Java, JavaScript, HTML and CSS, and I&rsquo;m working toward a career as a Full Stack Developer.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-outline js-resume" href="resume.pdf" download="Bhupesh-Kumar-Resume.pdf">Download Resume</a>
+          </div>
+
+          <ul class="social-list reveal" aria-label="Social links">
+            <li>
+              <a class="social-link" href="https://github.com/cr-bhupesh07" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in a new tab)">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </a>
+            </li>
+            <li>
+              <a class="social-link" href="https://www.linkedin.com/in/bhupesh-kumar-039090381" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in a new tab)">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true" focusable="false"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Decorative code card (only uses facts from this portfolio) -->
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="code-card">
+            <div class="code-top">
+              <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+              <span class="code-file">developer.js</span>
+            </div>
+<pre><code><span class="tok-kw">const</span> developer = {
+  name: <span class="tok-str">"Bhupesh Kumar"</span>,
+  goal: <span class="tok-str">"Full Stack Developer"</span>,
+  degree: <span class="tok-str">"B.Tech, AI &amp; Data Science"</span>,
+  college: <span class="tok-str">"Delhi Technical Campus"</span>,
+  graduating: <span class="tok-num">2029</span>,
+  languages: [
+    <span class="tok-str">"C"</span>, <span class="tok-str">"C++"</span>, <span class="tok-str">"Python"</span>,
+    <span class="tok-str">"Java"</span>, <span class="tok-str">"JavaScript"</span>
+  ]
+};</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">01 &middot; About</p>
+          <h2 id="about-title">About Me</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I&rsquo;m Bhupesh Kumar, a B.Tech student in Artificial Intelligence and Data Science at
+              Delhi Technical Campus, with an expected graduation in 2029.
+            </p>
+            <p>
+              My goal is to become a Full Stack Developer. I work with C, C++, Python, Java and
+              JavaScript, build web pages with HTML and CSS, and use Git, GitHub, VS Code and Postman
+              in my development workflow.
+            </p>
+            <p>
+              My experience so far includes an internship with Codsoft and volunteering with OS Code.
+              You can find the projects I have built in the Projects section below.
+            </p>
+          </div>
+
+          <ul class="fact-grid" data-stagger>
+            <li class="fact-card reveal">
+              <span class="fact-label">Education</span>
+              <span class="fact-value">B.Tech in Artificial Intelligence and Data Science</span>
+            </li>
+            <li class="fact-card reveal">
+              <span class="fact-label">College</span>
+              <span class="fact-value">Delhi Technical Campus</span>
+            </li>
+            <li class="fact-card reveal">
+              <span class="fact-label">Expected Graduation</span>
+              <span class="fact-value">2029</span>
+            </li>
+            <li class="fact-card reveal">
+              <span class="fact-label">Career Goal</span>
+              <span class="fact-value">Full Stack Developer</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section section-alt" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">02 &middot; Skills</p>
+          <h2 id="skills-title">Skills &amp; Tools</h2>
+          <p class="section-sub">The languages and tools I work with.</p>
+        </div>
+
+        <div class="skills-grid" data-stagger>
+          <article class="skill-card reveal">
+            <h3>Programming Languages</h3>
+            <ul class="chip-list">
+              <li>C</li>
+              <li>C++</li>
+              <li>Python</li>
+              <li>Java</li>
+              <li>JavaScript</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3>Web Technologies</h3>
+            <ul class="chip-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3>Tools</h3>
+            <ul class="chip-list">
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>VS Code</li>
+              <li>Postman</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">03 &middot; Projects</p>
+          <h2 id="projects-title">Projects</h2>
+          <p class="section-sub">A selection of projects I have worked on.</p>
+        </div>
+
+        <!--
+          HOW TO ADD A REAL PROJECT LINK:
+          1. Replace href="#" with your real URL (GitHub repo or live demo).
+          2. Delete the word "link-placeholder" from the class list.
+          3. Optionally add: target="_blank" rel="noopener noreferrer"
+        -->
+        <div class="projects-grid" data-stagger>
+
+          <article class="project-card reveal">
+            <span class="project-number" aria-hidden="true">01</span>
+            <h3>Student Record Management API</h3>
+            <p>An API project built to manage student records.</p>
+            <div class="project-links">
+              <a class="project-link link-placeholder" href="#" title="Placeholder: replace this link in index.html">View project <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <span class="project-number" aria-hidden="true">02</span>
+            <h3>Contact Management System</h3>
+            <p>A system built to store and manage contacts.</p>
+            <div class="project-links">
+              <a class="project-link link-placeholder" href="#" title="Placeholder: replace this link in index.html">View project <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <span class="project-number" aria-hidden="true">03</span>
+            <h3>Online Quiz System</h3>
+            <p>A quiz system that lets users take quizzes online.</p>
+            <div class="project-links">
+              <a class="project-link link-placeholder" href="#" title="Placeholder: replace this link in index.html">View project <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <span class="project-number" aria-hidden="true">04</span>
+            <h3>VitalChain AI</h3>
+            <p>A cold-chain shipment monitoring project.</p>
+            <div class="project-links">
+              <a class="project-link link-placeholder" href="#" title="Placeholder: replace this link in index.html">View project <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== RESUME / EXPERIENCE ===================== -->
+    <section class="section section-alt" id="resume" aria-labelledby="resume-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">04 &middot; Resume</p>
+          <h2 id="resume-title">Education &amp; Experience</h2>
+        </div>
+
+        <div class="resume-grid">
+          <!--
+            TIP: To add dates or details later, edit the <p> text inside each item below.
+          -->
+          <ol class="timeline reveal">
+            <li class="timeline-item">
+              <p class="timeline-type">Education</p>
+              <h3>B.Tech in Artificial Intelligence and Data Science</h3>
+              <p class="timeline-org">Delhi Technical Campus</p>
+              <p>Expected graduation: 2029</p>
+            </li>
+            <li class="timeline-item">
+              <p class="timeline-type">Internship</p>
+              <h3>Codsoft</h3>
+              <p>Internship with Codsoft.</p>
+            </li>
+            <li class="timeline-item">
+              <p class="timeline-type">Volunteer</p>
+              <h3>OS Code</h3>
+              <p>Volunteer work with OS Code.</p>
+            </li>
+          </ol>
+
+          <aside class="resume-card reveal" aria-labelledby="resume-card-title">
+            <h3 id="resume-card-title">My Resume</h3>
+            <p>Download a PDF copy of my resume.</p>
+            <a class="btn btn-primary js-resume" href="resume.pdf" download="Bhupesh-Kumar-Resume.pdf">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M5 21h14"/></svg>
+              Download Resume
+            </a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">05 &middot; Contact</p>
+          <h2 id="contact-title">Let&rsquo;s Connect</h2>
+          <p class="section-sub">The best way to reach me is through LinkedIn or GitHub.</p>
+        </div>
+
+        <!--
+          TO ADD YOUR EMAIL LATER: add a third card inside the list below, for example:
+          <li class="reveal"><a class="contact-card" href="mailto:your-email@example.com"> ... </a></li>
+        -->
+        <ul class="contact-grid" data-stagger>
+          <li class="reveal">
+            <a class="contact-card" href="https://www.linkedin.com/in/bhupesh-kumar-039090381" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true" focusable="false"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <span class="contact-text">
+                <span class="contact-title">LinkedIn</span>
+                <span class="contact-handle">bhupesh-kumar-039090381</span>
+              </span>
+              <span class="visually-hidden">(opens in a new tab)</span>
+            </a>
+          </li>
+          <li class="reveal">
+            <a class="contact-card" href="https://github.com/cr-bhupesh07" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              <span class="contact-text">
+                <span class="contact-title">GitHub</span>
+                <span class="contact-handle">cr-bhupesh07</span>
+              </span>
+              <span class="visually-hidden">(opens in a new tab)</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Bhupesh Kumar. Built with HTML, CSS and JavaScript.</p>
+      <a class="footer-link" href="#home">Back to top</a>
+    </div>
+  </footer>
+
+  <!-- Floating helpers -->
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
